@@ -1,0 +1,345 @@
+body {
+  background-color: #ffffff;
+  font-family: "Roboto";
+}
+
+body nav .container a.navbar-brand img {
+  width: 150px;
+}
+
+body nav .container #navbarResponsive ul li.nav-item {
+  margin: 0 15px;
+}
+
+body nav .container #navbarResponsive ul li.nav-item a.nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  color: #333333;
+}
+
+body nav .container #navbarResponsive ul li.active {
+  border-bottom: 2px solid #ef4257;
+}
+
+body nav .container #navbarResponsive ul li.active a.nav-link {
+  color: #ef4257;
+  font-weight: 600;
+}
+
+body nav .container #navbarResponsive ul li.action-user {
+  margin-top: 4px;
+  height: 34px;
+  border: 2px solid #ef4257;
+  border-radius: 5px;
+}
+
+body nav .container #navbarResponsive ul li.action-user a.nav-link {
+  padding: 2px 5px;
+  color: #ef4257;
+}
+
+body section#main section#banner {
+  height: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body section#main section#banner .container {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+}
+
+body section#main section#banner .container .text-center {
+  height: 500px;
+}
+
+body section#main section#banner .container .text-center h1 {
+  color: #ef4257;
+}
+
+body section#main section#banner .container .text-center h1 span {
+  font-weight: 600;
+}
+
+body section#main section#banner .container .text-center p {
+  padding: 15px 10%;
+  font-size: 17px;
+  color: #333333;
+}
+
+body section#main section#banner .container .text-center button {
+  background-color: #e73957;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+body section#main section#banner .container .row {
+  height: 100px;
+}
+
+body section#main section#action {
+  margin-top: 50px;
+}
+
+body section#main section#action .container .text-center {
+  margin-bottom: 40px;
+}
+
+body section#main section#action .container .text-center h3 {
+  font-size: 30px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+body section#main section#action .container .text-center p {
+  margin: auto;
+  text-align: center;
+  color: #333333;
+}
+
+body section#main section#action .container .row .col-3 .card {
+  border: none;
+}
+
+body section#main section#action .container .row .col-3 .card h4 {
+  margin-bottom: 40px;
+}
+
+body section#main section#action .container .row .col-3 .card img {
+  width: 105px;
+  height: 105px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+body section#main section#action .container .row .col-3 .card .card-body {
+  padding: 0;
+}
+
+body section#main section#action .container .row .col-3 .card .card-body p.card-text {
+  font-size: 17px;
+  color: #333333;
+}
+
+body section#main section#solieu {
+  margin-top: 50px;
+}
+
+body section#main section#solieu .container .row {
+  background-image: url("../images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+body section#main section#solieu .container .row .col-6.col1 img {
+  width: 100%;
+  padding: 30px 30px 0 40px;
+  margin: auto;
+}
+
+body section#main section#solieu .container .row .col-6.col2 h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+body section#main section#solieu .container .row .col-6.col2 ul.list1 {
+  list-style-image: url("../images/list2.png");
+}
+
+body section#main section#solieu .container .row .col-6.col2 ul.list1 li {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: -5px;
+  font-size: 20px;
+  color: #333333;
+}
+
+body section#main section#solieu .container .row .col-6.col2 ul.list1 li span {
+  font-size: 35px;
+  color: #333333;
+}
+
+body section#main section#time {
+  background-color: #f4f4f5;
+}
+
+body section#main section#time .container .row .col-6.col1 h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 30px 0;
+}
+
+body section#main section#time .container .row .col-6.col1 ul.list2 {
+  list-style-image: url("../images/list1.png");
+}
+
+body section#main section#time .container .row .col-6.col1 ul.list2 li {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #333333;
+  padding: 0;
+}
+
+body section#main section#time .container .row .col-6.col1 ul.list2 li span {
+  padding-top: -4px;
+}
+
+body section#main section#time .container .row .col-6.col2 img {
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+
+body section#main section#function .container .text-center h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 30px 0;
+}
+
+body section#main section#function .container .row .col-4 .card {
+  border: none;
+}
+
+body section#main section#function .container .row .col-4 .card .row .col-md-2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e73957;
+  padding: 15px;
+}
+
+body section#main section#function .container .row .col-4 .card .row .col-md-10 .card-body h6.card-title {
+  font-size: 18px;
+}
+
+body section#main section#partner {
+  background-color: #ffffff;
+}
+
+body section#main section#partner .container .text-center {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body section#main section#partner .container .text-center h3.title-partner {
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 30px;
+  line-height: 2;
+}
+
+body section#main section#partner .container .text-center p {
+  font-size: 17px;
+  color: #333333;
+}
+
+body section#main section#partner .container .row .col-3 .card {
+  border: none;
+  padding: 15px;
+}
+
+body section#main section#news {
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+body section#main section#news .container .text-center {
+  margin-bottom: 40px;
+}
+
+body section#main section#news .container .text-center h3.title-news {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #333333;
+}
+
+body section#main section#news .container .text-center p {
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  font-size: 17px;
+  color: #333333;
+}
+
+body section#main section#news .container .row .col .card {
+  border: none;
+}
+
+body section#main section#news .container .row .col .card .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body section#main section#news .container .row .col .card .card-body h5 {
+  font-size: 19.559px;
+  color: #38404e;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+body section#main section#news .container .row .col .card .card-body p {
+  color: #737983;
+  font-size: 14px;
+}
+
+body section#main section#footer {
+  background-color: #444752;
+}
+
+body section#main section#footer .container .row1 {
+  border-bottom: 1px solid #a2a3a9;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+body section#main section#footer .container .row1 .introduct ul.list-inline li.logo-footer {
+  width: 150px;
+}
+
+body section#main section#footer .container .row1 .introduct ul.list-inline li.social {
+  padding-left: 20px;
+}
+
+body section#main section#footer .container .row1 .introduct ul.list-inline li.social a {
+  color: #dadadc;
+}
+
+body section#main section#footer .container .row1 .introduct p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+body section#main section#footer .container .row1 .introduct .address p {
+  font-size: 15px;
+  margin: 0px;
+  color: #ffffff;
+}
+
+body section#main section#footer .container .row1 .col-3.download-app p {
+  color: #ffffff;
+}
+
+body section#main section#footer .container .row1 .col-3.download-app .download-ios img {
+  border-radius: 5px;
+}
+
+body section#main section#footer .container .row1 .col-3.download-app .download-android img {
+  border-radius: 5px;
+}
+
+body section#main section#footer .container .row2 .col {
+  padding-bottom: 47px;
+  padding-top: 30px;
+}
+
+body section#main section#footer .container .row2 .col p {
+  color: #ffffff;
+  font-size: 15px;
+}
+/*# sourceMappingURL=app.css.map */

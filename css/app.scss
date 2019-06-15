@@ -271,6 +271,25 @@ body {
                 }
             }
         }
+        section#pricing {
+            .container {
+                .row {
+                    .col-10 {
+                        .text-center {
+                            margin-bottom: 30px;
+                            h3.title-pricing {
+                                font-size: 30px;
+                                text-transform: uppercase;
+                                color: $colorText
+                            }
+                            P {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         section#news {
             background-color: $bgBody;
             margin-top: 30px;

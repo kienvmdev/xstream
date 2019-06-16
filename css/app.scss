@@ -83,6 +83,16 @@ body {
                 }
                 .row {
                     height: 100px;
+                    padding-top: 50px;
+                    .list-inline.download-app {
+                        li {
+                            a {
+                                img {
+                                    width: 150px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -263,6 +273,7 @@ body {
                 }
                 .row {
                     .col-3 {
+                        // height: 100px;
                         .card {
                             border: none;
                             padding: 15px;

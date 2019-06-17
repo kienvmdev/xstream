@@ -1,6 +1,7 @@
 $bgFooter: #444752;
 $bgPrice: #f4f4f5;
 $bgBody: #ffffff;
+$bgColPricing: #757676;
 $textWhile: #ffffff;
 $bgIconFunction: #e73957;
 $colorText: #696969;
@@ -9,242 +10,242 @@ $colorClock: #737983;
 $colorTitle: rgb(51, 51, 51);
 $borderFooter: #a2a3a9;
 $colorSocial: #dadadc;
-body {
-    background-color: $bgBody;
-    font-family: "Roboto";
-    nav {
-        .container {
-            a.navbar-brand {
-                img {
-                    width: 150px;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+html {
+    scroll-behavior: smooth;
+    body {
+        background-color: $bgBody;
+        font-family: "Roboto";
+        nav#menu {
+            background-color: $bgBody;
+            .container {
+                a.navbar-brand {
+                    img {
+                        width: 150px;
+                    }
+                }
+                #navbarResponsive {
+                    ul {
+                        li.nav-item {
+                            margin: 0 15px;
+                            a.nav-link {
+                                padding-left: 0;
+                                padding-right: 0;
+                                color: $colorTitle;
+                            }
+                        }
+                        li.active {
+                            border-bottom: 2px solid $colorTextBold;
+                            a.nav-link {
+                                color: $colorTextBold;
+                                font-weight: 600;
+                            }
+                        }
+                        li.action-user {
+                            margin-top: 4px;
+                            height: 34px;
+                            border: 2px solid $colorTextBold;
+                            border-radius: 5px;
+                            a.nav-link {
+                                padding: 2px 5px;
+                                color: $colorTextBold;
+                            }
+                        }
+                    }
                 }
             }
-            #navbarResponsive {
-                ul {
-                    li.nav-item {
-                        margin: 0 15px;
-                        a.nav-link {
-                            padding-left: 0;
-                            padding-right: 0;
+        }
+        section#main {
+            section#banner {
+                height: 600px;
+                margin-top: 100px;
+                margin-bottom: 30px;
+                .container {
+                    background-image: url('../images/banner.png');
+                    background-repeat: no-repeat;
+                    // -webkit-background-size: cover;
+                    // -moz-background-size: cover;
+                    // -o-background-size: cover;
+                    // background-size: cover;
+                    .text-center {
+                        height: 500px;
+                        h1 {
+                            color: $colorTextBold;
+                            span {
+                                font-weight: 600;
+                            }
+                        }
+                        p {
+                            padding: 15px 10%;
+                            font-size: 17px;
                             color: $colorTitle;
                         }
-                    }
-                    li.active {
-                        border-bottom: 2px solid $colorTextBold;
-                        a.nav-link {
-                            color: $colorTextBold;
+                        button {
+                            background-color: $bgIconFunction;
+                            color: $textWhile;
                             font-weight: 600;
                         }
                     }
-                    li.action-user {
-                        margin-top: 4px;
-                        height: 34px;
-                        border: 2px solid $colorTextBold;
-                        border-radius: 5px;
-                        a.nav-link {
-                            padding: 2px 5px;
-                            color: $colorTextBold;
+                    .row {
+                        height: 100px;
+                        padding-top: 50px;
+                        .list-inline.download-app {
+                            li {
+                                a {
+                                    img {
+                                        width: 150px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-    }
-    section#main {
-        section#banner {
-            height: 600px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            .container {
-                background-image: url('../images/banner.png');
-                background-repeat: no-repeat;
-                // -webkit-background-size: cover;
-                // -moz-background-size: cover;
-                // -o-background-size: cover;
-                // background-size: cover;
-                .text-center {
-                    height: 500px;
-                    h1 {
-                        color: $colorTextBold;
-                        span {
-                            font-weight: 600;
+            section#action {
+                margin-top: 50px;
+                .container {
+                    .text-center {
+                        h3 {
+                            font-size: 30px;
+                            color: $colorTitle;
+                            text-transform: uppercase;
                         }
+                        p {
+                            margin: auto;
+                            text-align: center;
+                            color: $colorTitle;
+                        }
+                        margin-top: 40px;
+                        margin-bottom: 40px;
                     }
-                    p {
-                        padding: 15px 10%;
-                        font-size: 17px;
-                        color: $colorTitle;
-                    }
-                    button {
-                        background-color: $bgIconFunction;
-                        color: $textWhile;
-                        font-weight: 600;
-                    }
-                }
-                .row {
-                    height: 100px;
-                    padding-top: 50px;
-                    .list-inline.download-app {
-                        li {
-                            a {
+                    .row {
+                        .col-md-3 {
+                            .card {
+                                border: none;
+                                h4 {
+                                    margin-bottom: 40px;
+                                }
                                 img {
-                                    width: 150px;
+                                    width: 105px;
+                                    height: 105px;
+                                    text-align: center;
+                                    margin: auto;
+                                    margin-bottom: 30px;
+                                }
+                                .card-body {
+                                    padding: 0;
+                                    p.card-text {
+                                        font-size: 17px;
+                                        color: $colorTitle;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        section#action {
-            margin-top: 50px;
-            .container {
-                .text-center {
-                    h3 {
-                        font-size: 30px;
-                        color: $colorTitle;
-                        text-transform: uppercase;
-                    }
-                    p {
-                        margin: auto;
-                        text-align: center;
-                        color: $colorTitle;
-                    }
-                    margin-bottom: 40px;
-                }
-                .row {
-                    .col-3 {
-                        .card {
-                            border: none;
-                            h4 {
-                                margin-bottom: 40px;
-                            }
-                            img {
-                                width: 105px;
-                                height: 105px;
-                                text-align: center;
-                                margin: auto;
-                                margin-bottom: 30px;
-                            }
-                            .card-body {
-                                padding: 0;
-                                p.card-text {
-                                    font-size: 17px;
-                                    color: $colorTitle;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        section#solieu {
-            margin-top: 50px;
-            .container {
-                .row {
-                    background-image: url('../images/bg1.png');
-                    background-repeat: no-repeat;
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                    background-position: left;
-                    .col-6.col1 {
-                        // background-image: url('../images/bg1.png');
-                        // background-repeat: no-repeat;
+            section#solieu {
+                margin-top: 50px;
+                .container {
+                    .row {
+                        background-image: url('../images/bg1.png');
+                        background-repeat: no-repeat;
                         // -webkit-background-size: cover;
                         // -moz-background-size: cover;
                         // -o-background-size: cover;
                         // background-size: cover;
-                        img {
-                            width: 100%;
-                            padding: 30px 30px 0 40px;
-                            margin: auto;
+                        background-position: -210px center;
+                        .col-6.col1 {
+                            img {
+                                width: 100%;
+                                padding: 30px 30px 0 40px;
+                                margin: auto;
+                            }
                         }
-                    }
-                    .col-6.col2 {
-                        h3 {
-                            font-size: 30px;
-                            text-transform: uppercase;
-                            color: $colorTitle;
-                        }
-                        ul.list1 {
-                            list-style-image: url('../images/list2.png');
-                            li {
-                                margin-top: 25px;
-                                margin-bottom: 25px;
-                                padding-top: -5px;
-                                font-size: 20px;
+                        .col-6.col2 {
+                            h3 {
+                                font-size: 30px;
+                                text-transform: uppercase;
                                 color: $colorTitle;
-                                span {
-                                    font-size: 35px;
+                            }
+                            ul.list1 {
+                                list-style-image: url('../images/list2.png');
+                                li {
+                                    margin-top: 25px;
+                                    margin-bottom: 25px;
+                                    padding-top: -5px;
+                                    font-size: 20px;
                                     color: $colorTitle;
+                                    span {
+                                        font-size: 35px;
+                                        color: $colorTitle;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        section#time {
-            background-color: $bgPrice;
-            .container {
-                .row {
-                    .col-6.col1 {
+            section#time {
+                background-color: $bgPrice;
+                .container {
+                    .row {
+                        .col-6.col1 {
+                            h3 {
+                                font-size: 30px;
+                                text-transform: uppercase;
+                                color: $colorTitle;
+                                margin: 30px 0;
+                            }
+                            ul.list2 {
+                                list-style-image: url('../images/list1.png');
+                                li {
+                                    margin: 15px 0;
+                                    font-size: 20px;
+                                    color: $colorTitle;
+                                    padding: 0;
+                                    span {
+                                        padding-top: -4px;
+                                    }
+                                }
+                            }
+                        }
+                        .col-6.col2 {
+                            img {
+                                width: 100%;
+                                padding: 40px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            section#function {
+                .container {
+                    .text-center {
                         h3 {
                             font-size: 30px;
                             text-transform: uppercase;
                             color: $colorTitle;
                             margin: 30px 0;
                         }
-                        ul.list2 {
-                            list-style-image: url('../images/list1.png');
-                            li {
-                                margin: 15px 0;
-                                font-size: 20px;
-                                color: $colorTitle;
-                                padding: 0;
-                                span {
-                                    padding-top: -4px;
-                                }
-                            }
-                        }
                     }
-                    .col-6.col2 {
-                        img {
-                            width: 100%;
-                            padding: 40px 0 0 0;
-                        }
-                    }
-                }
-            }
-        }
-        section#function {
-            .container {
-                .text-center {
-                    h3 {
-                        font-size: 30px;
-                        text-transform: uppercase;
-                        color: $colorTitle;
-                        margin: 30px 0;
-                    }
-                }
-                .row {
-                    .col-4 {
-                        .card {
-                            border: none;
-                            .row {
-                                .col-md-2 {
-                                    width: 60px;
-                                    height: 60px;
-                                    border-radius: 50%;
-                                    background-color: $bgIconFunction;
-                                    padding: 15px;
-                                }
-                                .col-md-10 {
-                                    .card-body {
-                                        h6.card-title {
-                                            font-size: 18px;
+                    .row {
+                        .col-4 {
+                            .card {
+                                border: none;
+                                .row {
+                                    .col-md-2 {
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        background-color: $bgIconFunction;
+                                        padding: 15px;
+                                    }
+                                    .col-md-10 {
+                                        .card-body {
+                                            h6.card-title {
+                                                font-size: 18px;
+                                            }
                                         }
                                     }
                                 }
@@ -253,152 +254,199 @@ body {
                     }
                 }
             }
-        }
-        section#partner {
-            background-color: $bgBody;
-            .container {
-                .text-center {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    h3.title-partner {
-                        text-transform: uppercase;
-                        color: rgb(51, 51, 51);
-                        font-size: 30px;
-                        line-height: 2;
-                    }
-                    p {
-                        font-size: 17px;
-                        color: rgb(51, 51, 51);
-                    }
-                }
-                .row {
-                    .col-3 {
-                        // height: 100px;
-                        .card {
-                            border: none;
-                            padding: 15px;
-                        }
-                    }
-                }
-            }
-        }
-        section#pricing {
-            .container {
-                .row {
-                    .col-10 {
-                        .text-center {
-                            margin-bottom: 30px;
-                            h3.title-pricing {
-                                font-size: 30px;
-                                text-transform: uppercase;
-                                color: $colorText
-                            }
-                            P {
-                                margin: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        section#news {
-            background-color: $bgBody;
-            margin-top: 30px;
-            margin-bottom: 40px;
-            .container {
-                .text-center {
-                    margin-bottom: 40px;
-                    h3.title-news {
-                        text-transform: uppercase;
-                        font-size: 30px;
-                        color: rgb(51, 51, 51);
-                    }
-                    p {
-                        line-height: normal;
-                        margin: auto;
-                        text-align: center;
-                        width: 50%;
-                        font-size: 17px;
-                        color: rgb(51, 51, 51);
-                    }
-                }
-                .row {
-                    .col {
-                        .card {
-                            border: none;
-                            .card-body {
-                                padding-left: 0;
-                                padding-right: 0;
-                                h5 {
-                                    font-size: 19.559px;
-                                    color: rgb(56, 64, 78);
-                                    font-weight: bold;
-                                    line-height: 1.2;
-                                }
-                                p {
-                                    color: $colorClock;
-                                    font-size: 14px
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        section#footer {
-            background-color: $bgFooter;
-            .container {
-                .row1 {
-                    border-bottom: 1px solid $borderFooter;
-                    padding-top: 40px;
-                    padding-bottom: 30px;
-                    .introduct {
-                        ul.list-inline {
-                            li.logo-footer {
-                                width: 150px;
-                            }
-                            li.social {
-                                padding-left: 20px;
-                                a {
-                                    color: $colorSocial
-                                }
-                            }
+            section#partner {
+                background-color: $bgBody;
+                .container {
+                    .text-center {
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        h3.title-partner {
+                            text-transform: uppercase;
+                            color: rgb(51, 51, 51);
+                            font-size: 30px;
+                            line-height: 2;
                         }
                         p {
-                            font-size: 15px;
-                            color: $textWhile
+                            font-size: 17px;
+                            color: rgb(51, 51, 51);
                         }
-                        .address {
+                    }
+                    .row {
+                        .col-3 {
+                            // height: 100px;
+                            .card {
+                                border: none;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            section#pricing {
+                background-color: $bgPrice;
+                .container {
+                    .row {
+                        .pricing {
+                            width: 100%;
+                            .text-center {
+                                margin-top: 30px;
+                                margin-bottom: 30px;
+                                h3.title-pricing {
+                                    font-size: 30px;
+                                    text-transform: uppercase;
+                                    color: $colorText
+                                }
+                                P {
+                                    margin: 0;
+                                }
+                            }
+                            .row {
+                                .list-group {
+                                    .header {
+                                        background-color: $bgColPricing;
+                                        height: 100px;
+                                        h4 {
+                                            color: $textWhile;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                    a {
+                                        color: #000000;
+                                    }
+                                    .list-group-item {
+                                        border: none;
+                                        border-left: 0.5px solid #e2e2e2;
+                                        border-right: 0.5px solid #e2e2e2;
+                                    }
+                                }
+                            }
+                            .row {
+                                .title {
+                                    .header {
+                                        h4 {
+                                            padding-top: 23px;
+                                        }
+                                    }
+                                    .list-group-item {
+                                        padding-right: 1px;
+                                    }
+                                }
+                            }
+                            .row {
+                                .popular {
+                                    padding-top: -20px;
+                                    padding-bottom: -20px;
+                                    .header {
+                                        background-color: $bgIconFunction;
+                                    }
+                                    a.popular {
+                                        padding-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section#news {
+                background-color: $bgBody;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                .container {
+                    .text-center {
+                        margin-bottom: 40px;
+                        h3.title-news {
+                            text-transform: uppercase;
+                            font-size: 30px;
+                            color: rgb(51, 51, 51);
+                        }
+                        p {
+                            line-height: normal;
+                            margin: auto;
+                            text-align: center;
+                            width: 50%;
+                            font-size: 17px;
+                            color: rgb(51, 51, 51);
+                        }
+                    }
+                    .row {
+                        .col {
+                            .card {
+                                border: none;
+                                .card-body {
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    h5 {
+                                        font-size: 19.559px;
+                                        color: rgb(56, 64, 78);
+                                        font-weight: bold;
+                                        line-height: 1.2;
+                                    }
+                                    p {
+                                        color: $colorClock;
+                                        font-size: 14px
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section#footer {
+                background-color: $bgFooter;
+                .container {
+                    .row1 {
+                        border-bottom: 1px solid $borderFooter;
+                        padding-top: 45px;
+                        padding-bottom: 40px;
+                        .introduct {
+                            ul.list-inline {
+                                li.logo-footer {
+                                    width: 150px;
+                                }
+                                li.social {
+                                    padding-left: 20px;
+                                    a {
+                                        color: $colorSocial
+                                    }
+                                }
+                            }
                             p {
                                 font-size: 15px;
-                                margin: 0px;
                                 color: $textWhile
                             }
-                        }
-                    }
-                    .col-3.download-app {
-                        p {
-                            color: $textWhile;
-                        }
-                        .download-ios {
-                            img {
-                                border-radius: 5px;
+                            .address {
+                                p {
+                                    font-size: 15px;
+                                    margin: 0px;
+                                    color: $textWhile
+                                }
                             }
                         }
-                        .download-android {
-                            img {
-                                border-radius: 5px;
+                        .col-3.download-app {
+                            p {
+                                color: $textWhile;
+                            }
+                            .download-ios {
+                                img {
+                                    border-radius: 5px;
+                                }
+                            }
+                            .download-android {
+                                img {
+                                    border-radius: 5px;
+                                }
                             }
                         }
                     }
-                }
-                .row2 {
-                    .col {
-                        padding-bottom: 47px;
-                        padding-top: 30px;
-                        p {
-                            color: $textWhile;
-                            font-size: 15px;
+                    .row2 {
+                        .col {
+                            padding-bottom: 46px;
+                            padding-top: 22px;
+                            p {
+                                color: $textWhile;
+                                font-size: 15px;
+                            }
                         }
                     }
                 }

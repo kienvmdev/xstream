@@ -55,6 +55,13 @@ html {
                 }
             }
         }
+        section {
+            .container {
+                @media screen and (max-width: 767px) {
+                    min-width: 100% !important;
+                }
+            }
+        }
         section#main {
             section#banner {
                 height: 600px;
@@ -88,7 +95,7 @@ html {
                     }
                     .row {
                         height: 100px;
-                        padding-top: 50px;
+                        padding-top: 100px;
                         .list-inline.download-app {
                             li {
                                 a {
@@ -97,11 +104,15 @@ html {
                                     }
                                 }
                             }
+                            @media screen and (max-width: 767px) {
+                                margin: auto;
+                            }
                         }
                     }
                 }
             }
             section#action {
+                padding-top: 30px;
                 margin-top: 50px;
                 .container {
                     .text-center {
@@ -155,18 +166,31 @@ html {
                         // -o-background-size: cover;
                         // background-size: cover;
                         background-position: -210px center;
-                        .col-6.col1 {
+                        @media screen and (max-width: 767px) {
+                            background-image: none;
+                        }
+                        .col-md-6.col1 {
+                            @media screen and (max-width: 767px) {
+                                background-image: url('../images/bg1.png');
+                                background-repeat: no-repeat;
+                                // -webkit-background-size: cover;
+                                // -moz-background-size: cover;
+                                // -o-background-size: cover;
+                                // background-size: cover;
+                                background-position: -150px center;
+                            }
                             img {
                                 width: 100%;
                                 padding: 30px 30px 0 40px;
                                 margin: auto;
                             }
                         }
-                        .col-6.col2 {
+                        .col-md-6.col2 {
                             h3 {
                                 font-size: 30px;
                                 text-transform: uppercase;
                                 color: $colorTitle;
+                                margin-top: 30px;
                             }
                             ul.list1 {
                                 list-style-image: url('../images/list2.png');
@@ -190,7 +214,7 @@ html {
                 background-color: $bgPrice;
                 .container {
                     .row {
-                        .col-6.col1 {
+                        .col-md-6.col1 {
                             h3 {
                                 font-size: 30px;
                                 text-transform: uppercase;
@@ -210,7 +234,7 @@ html {
                                 }
                             }
                         }
-                        .col-6.col2 {
+                        .col-md-6.col2 {
                             img {
                                 width: 100%;
                                 padding: 40px 0 0 0;
@@ -230,16 +254,23 @@ html {
                         }
                     }
                     .row {
-                        .col-4 {
+                        .col-md-4 {
                             .card {
                                 border: none;
                                 .row {
                                     .col-md-2 {
-                                        width: 60px;
-                                        height: 60px;
+                                        width: 60px !important;
+                                        height: 60px !important;
                                         border-radius: 50%;
                                         background-color: $bgIconFunction;
                                         padding: 15px;
+                                        @media screen and (max-width: 767px) {
+                                            width: 60px !important;
+                                            height: 60px !important;
+                                            border-radius: 50%;
+                                            background-color: $bgIconFunction;
+                                            padding: 5px;
+                                        }
                                     }
                                     .col-md-10 {
                                         .card-body {
@@ -272,11 +303,14 @@ html {
                         }
                     }
                     .row {
-                        .col-3 {
+                        .col-md-3 {
                             // height: 100px;
                             .card {
                                 border: none;
                                 padding: 15px;
+                                @media screen and (max-width: 767px) {
+                                    border: none;
+                                }
                             }
                         }
                     }
@@ -367,12 +401,19 @@ html {
                             width: 50%;
                             font-size: 17px;
                             color: rgb(51, 51, 51);
+                            @media screen and (max-width: 767px) {
+                                width: 100% !important;
+                            }
                         }
                     }
                     .row {
-                        .col {
+                        .col-md-4 {
                             .card {
                                 border: none;
+                                @media screen and (max-width: 767px) {
+                                    border: none;
+                                    margin-top: 20px;
+                                }
                                 .card-body {
                                     padding-left: 0;
                                     padding-right: 0;
@@ -423,7 +464,7 @@ html {
                                 }
                             }
                         }
-                        .col-3.download-app {
+                        .col-md-3.download-app {
                             p {
                                 color: $textWhile;
                             }

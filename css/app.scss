@@ -1,281 +1,302 @@
-$bgFooter: #444752;
-$bgPrice: #f4f4f5;
-$bgBody: #ffffff;
-$bgColPricing: #757676;
-$textWhile: #ffffff;
-$bgIconFunction: #e73957;
-$colorText: #696969;
-$colorTextBold: #ef4257;
-$colorClock: #737983;
-$colorTitle: rgb(51, 51, 51);
-$borderFooter: #a2a3a9;
-$colorSocial: #dadadc;
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-html {
-    scroll-behavior: smooth;
-    body {
-        background-color: $bgBody;
-        font-family: "Roboto";
-        nav#menu {
+    $bgFooter: #444752;
+    $bgPrice: #f4f4f5;
+    $bgBody: #ffffff;
+    $bgColPricing: #757676;
+    $textWhile: #ffffff;
+    $bgIconFunction: #e73957;
+    $colorText: #696969;
+    $colorTextBold: #ef4257;
+    $colorClock: #737983;
+    $colorTitle: rgb(51, 51, 51);
+    $borderFooter: #a2a3a9;
+    $colorSocial: #dadadc;
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+    html {
+        scroll-behavior: smooth;
+        body {
             background-color: $bgBody;
-            .container {
-                a.navbar-brand {
-                    img {
-                        width: 150px;
+            font-family: "Roboto";
+            nav#menu {
+                background-color: $bgBody;
+                .container {
+                    a.navbar-brand {
+                        img {
+                            width: 150px;
+                        }
+                    }
+                    #navbarResponsive {
+                        ul {
+                            li.nav-item {
+                                margin: 0 15px;
+                                a.nav-link {
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    color: $colorTitle;
+                                }
+                            }
+                            li.active {
+                                border-bottom: 2px solid $colorTextBold;
+                                a.nav-link {
+                                    color: $colorTextBold;
+                                    font-weight: 600;
+                                }
+                            }
+                            li.action-user {
+                                margin-top: 4px;
+                                height: 34px;
+                                border: 2px solid $colorTextBold;
+                                border-radius: 5px;
+                                a.nav-link {
+                                    padding: 2px 5px;
+                                    color: $colorTextBold;
+                                }
+                            }
+                        }
                     }
                 }
-                #navbarResponsive {
-                    ul {
-                        li.nav-item {
-                            margin: 0 15px;
-                            a.nav-link {
-                                padding-left: 0;
-                                padding-right: 0;
+            }
+            section {
+                .container {
+                    @media screen and (max-width: 767px) {
+                        min-width: 100% !important;
+                    }
+                }
+            }
+            section#main {
+                section#banner {
+                    height: auto;
+                    margin-top: 100px;
+                    margin-bottom: 30px;
+                    .container {
+                        background-image: url('../images/banner.png');
+                        background-repeat: no-repeat;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;
+                        @media screen and (max-width: 767px) {
+                            background-image: url('../images/banner.png');
+                            background-size: cover;
+                        }
+                        .text-center {
+                            height: 500px;
+                            h1 {
+                                color: $colorTextBold;
+                                span {
+                                    font-weight: 600;
+                                }
+                            }
+                            p {
+                                padding: 15px 10%;
+                                font-size: 17px;
                                 color: $colorTitle;
                             }
-                        }
-                        li.active {
-                            border-bottom: 2px solid $colorTextBold;
-                            a.nav-link {
-                                color: $colorTextBold;
+                            button {
+                                background-color: $bgIconFunction;
+                                color: $textWhile;
                                 font-weight: 600;
                             }
                         }
-                        li.action-user {
-                            margin-top: 4px;
-                            height: 34px;
-                            border: 2px solid $colorTextBold;
-                            border-radius: 5px;
-                            a.nav-link {
-                                padding: 2px 5px;
-                                color: $colorTextBold;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        section {
-            .container {
-                @media screen and (max-width: 767px) {
-                    min-width: 100% !important;
-                }
-            }
-        }
-        section#main {
-            section#banner {
-                height: 600px;
-                margin-top: 100px;
-                margin-bottom: 30px;
-                .container {
-                    background-image: url('../images/banner.png');
-                    background-repeat: no-repeat;
-                    // -webkit-background-size: cover;
-                    // -moz-background-size: cover;
-                    // -o-background-size: cover;
-                    // background-size: cover;
-                    .text-center {
-                        height: 500px;
-                        h1 {
-                            color: $colorTextBold;
-                            span {
-                                font-weight: 600;
-                            }
-                        }
-                        p {
-                            padding: 15px 10%;
-                            font-size: 17px;
-                            color: $colorTitle;
-                        }
-                        button {
-                            background-color: $bgIconFunction;
-                            color: $textWhile;
-                            font-weight: 600;
-                        }
-                    }
-                    .row {
-                        height: 100px;
-                        padding-top: 100px;
-                        .list-inline.download-app {
-                            li {
-                                a {
-                                    img {
-                                        width: 150px;
+                        .row {
+                            height: 100px;
+                            padding-top: 100px;
+                            .list-inline.download-app {
+                                li {
+                                    a {
+                                        img {
+                                            width: 150px;
+                                        }
                                     }
                                 }
-                            }
-                            @media screen and (max-width: 767px) {
-                                margin: auto;
-                            }
-                        }
-                    }
-                }
-            }
-            section#action {
-                padding-top: 30px;
-                margin-top: 50px;
-                .container {
-                    .text-center {
-                        h3 {
-                            font-size: 30px;
-                            color: $colorTitle;
-                            text-transform: uppercase;
-                        }
-                        p {
-                            margin: auto;
-                            text-align: center;
-                            color: $colorTitle;
-                        }
-                        margin-top: 40px;
-                        margin-bottom: 40px;
-                    }
-                    .row {
-                        .col-md-3 {
-                            .card {
-                                border: none;
-                                h4 {
-                                    margin-bottom: 40px;
-                                }
-                                img {
-                                    width: 105px;
-                                    height: 105px;
-                                    text-align: center;
+                                @media screen and (max-width: 767px) {
                                     margin: auto;
-                                    margin-bottom: 30px;
-                                }
-                                .card-body {
-                                    padding: 0;
-                                    p.card-text {
-                                        font-size: 17px;
-                                        color: $colorTitle;
-                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            section#solieu {
-                margin-top: 50px;
-                .container {
-                    .row {
-                        background-image: url('../images/bg1.png');
-                        background-repeat: no-repeat;
-                        // -webkit-background-size: cover;
-                        // -moz-background-size: cover;
-                        // -o-background-size: cover;
-                        // background-size: cover;
-                        background-position: -210px center;
-                        @media screen and (max-width: 767px) {
-                            background-image: none;
-                        }
-                        .col-md-6.col1 {
-                            @media screen and (max-width: 767px) {
-                                background-image: url('../images/bg1.png');
-                                background-repeat: no-repeat;
-                                // -webkit-background-size: cover;
-                                // -moz-background-size: cover;
-                                // -o-background-size: cover;
-                                // background-size: cover;
-                                background-position: -150px center;
-                            }
-                            img {
-                                width: 100%;
-                                padding: 30px 30px 0 40px;
-                                margin: auto;
-                            }
-                        }
-                        .col-md-6.col2 {
+                section#action {
+                    padding-top: 30px;
+                    margin-top: 50px;
+                    .container {
+                        .text-center {
                             h3 {
                                 font-size: 30px;
-                                text-transform: uppercase;
                                 color: $colorTitle;
-                                margin-top: 30px;
+                                text-transform: uppercase;
                             }
-                            ul.list1 {
-                                list-style-image: url('../images/list2.png');
-                                li {
-                                    margin-top: 25px;
-                                    margin-bottom: 25px;
-                                    padding-top: -5px;
-                                    font-size: 20px;
-                                    color: $colorTitle;
-                                    span {
-                                        font-size: 35px;
-                                        color: $colorTitle;
+                            p {
+                                margin: auto;
+                                text-align: center;
+                                color: $colorTitle;
+                            }
+                            margin-top: 40px;
+                            margin-bottom: 40px;
+                        }
+                        .row {
+                            .col-md-3 {
+                                .card {
+                                    border: none;
+                                    h4 {
+                                        margin-bottom: 40px;
+                                        @media screen and (max-width: 767px) {
+                                            margin-top: 30px;
+                                            margin-bottom: 15px;
+                                        }
+                                    }
+                                    img {
+                                        width: 105px;
+                                        height: 105px;
+                                        text-align: center;
+                                        margin: auto;
+                                        margin-bottom: 30px;
+                                    }
+                                    .card-body {
+                                        padding: 0;
+                                        p.card-text {
+                                            font-size: 17px;
+                                            color: $colorTitle;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
-            }
-            section#time {
-                background-color: $bgPrice;
-                .container {
-                    .row {
-                        .col-md-6.col1 {
+                section#solieu {
+                    margin-top: 50px;
+                    .container {
+                        .row {
+                            background-image: url('../images/bg1.png');
+                            background-repeat: no-repeat;
+                            // -webkit-background-size: cover;
+                            // -moz-background-size: cover;
+                            // -o-background-size: cover;
+                            // background-size: cover;
+                            background-position: -210px center;
+                            @media screen and (max-width: 767px) {
+                                background-image: none;
+                            }
+                            .col-md-6.col1 {
+                                @media screen and (max-width: 767px) {
+                                    background-image: url('../images/bg1.png');
+                                    background-repeat: no-repeat;
+                                    // -webkit-background-size: cover;
+                                    // -moz-background-size: cover;
+                                    // -o-background-size: cover;
+                                    // background-size: cover;
+                                    background-position: -150px center;
+                                }
+                                img {
+                                    width: 100%;
+                                    padding: 30px 30px 0 40px;
+                                    margin: auto;
+                                }
+                            }
+                            .col-md-6.col2 {
+                                h3 {
+                                    font-size: 30px;
+                                    text-transform: uppercase;
+                                    color: $colorTitle;
+                                    margin-top: 30px;
+                                }
+                                ul.list1 {
+                                    list-style-image: url('../images/list2.png');
+                                    li {
+                                        margin-top: 25px;
+                                        margin-bottom: 25px;
+                                        padding-top: -5px;
+                                        font-size: 20px;
+                                        color: $colorTitle;
+                                        span {
+                                            font-size: 35px;
+                                            color: $colorTitle;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                section#time {
+                    background-color: $bgPrice;
+                    .container {
+                        .row {
+                            .col-md-6.col1 {
+                                h3 {
+                                    font-size: 30px;
+                                    text-transform: uppercase;
+                                    color: $colorTitle;
+                                    margin: 30px 0;
+                                }
+                                ul.list2 {
+                                    list-style-image: url('../images/list1.png');
+                                    list-style-position: outside;
+                                    li {
+                                        margin: 15px 0;
+                                        font-size: 20px;
+                                        color: $colorTitle;
+                                        padding: 0;
+                                        span {
+                                            padding-top: -4px;
+                                        }
+                                    }
+                                }
+                            }
+                            .col-md-6.col2 {
+                                img {
+                                    width: 100%;
+                                    padding: 40px 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                section#function {
+                    .container {
+                        .text-center {
                             h3 {
                                 font-size: 30px;
                                 text-transform: uppercase;
                                 color: $colorTitle;
                                 margin: 30px 0;
                             }
-                            ul.list2 {
-                                list-style-image: url('../images/list1.png');
-                                li {
-                                    margin: 15px 0;
-                                    font-size: 20px;
-                                    color: $colorTitle;
-                                    padding: 0;
-                                    span {
-                                        padding-top: -4px;
-                                    }
-                                }
-                            }
                         }
-                        .col-md-6.col2 {
-                            img {
-                                width: 100%;
-                                padding: 40px 0 0 0;
-                            }
-                        }
-                    }
-                }
-            }
-            section#function {
-                .container {
-                    .text-center {
-                        h3 {
-                            font-size: 30px;
-                            text-transform: uppercase;
-                            color: $colorTitle;
-                            margin: 30px 0;
-                        }
-                    }
-                    .row {
-                        .col-md-4 {
-                            .card {
-                                border: none;
-                                .row {
-                                    .col-md-2 {
-                                        width: 60px !important;
-                                        height: 60px !important;
-                                        border-radius: 50%;
-                                        background-color: $bgIconFunction;
-                                        padding: 15px;
-                                        @media screen and (max-width: 767px) {
-                                            width: 60px !important;
-                                            height: 60px !important;
-                                            border-radius: 50%;
-                                            background-color: $bgIconFunction;
-                                            padding: 5px;
+                        .row {
+                            .col-md-4 {
+                                .card {
+                                    border: none;
+                                    .row {
+                                        .col-md-2 {
+                                            @media screen and (max-width: 767px) {}
+                                            .img-center {
+                                                width: 60px !important;
+                                                height: 60px !important;
+                                                border-radius: 50%;
+                                                background-color: $bgIconFunction;
+                                                text-align: center;
+                                                align-content: center;
+                                                align-items: center;
+                                                padding: 15px;
+                                                -moz-border-radius: 50%;
+                                                -webkit-border-radius: 50%;
+                                                @media screen and (max-width: 767px) {
+                                                    margin: auto;
+                                                    width: 60px !important;
+                                                    height: 60px !important;
+                                                    border-radius: 50%;
+                                                    -moz-border-radius: 50%;
+                                                    -webkit-border-radius: 50%;
+                                                    background-color: $bgIconFunction;
+                                                    padding: 10px;
+                                                }
+                                            }
                                         }
-                                    }
-                                    .col-md-10 {
-                                        .card-body {
-                                            h6.card-title {
-                                                font-size: 18px;
+                                        .col-md-10 {
+                                            .card-body {
+                                                h6.card-title {
+                                                    font-size: 18px;
+                                                }
                                             }
                                         }
                                     }
@@ -284,209 +305,238 @@ html {
                         }
                     }
                 }
-            }
-            section#partner {
-                background-color: $bgBody;
-                .container {
-                    .text-center {
-                        margin-top: 30px;
-                        margin-bottom: 30px;
-                        h3.title-partner {
-                            text-transform: uppercase;
-                            color: rgb(51, 51, 51);
-                            font-size: 30px;
-                            line-height: 2;
-                        }
-                        p {
-                            font-size: 17px;
-                            color: rgb(51, 51, 51);
-                        }
-                    }
-                    .row {
-                        .col-md-3 {
-                            // height: 100px;
-                            .card {
-                                border: none;
-                                padding: 15px;
-                                @media screen and (max-width: 767px) {
-                                    border: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            section#pricing {
-                background-color: $bgPrice;
-                .container {
-                    .row {
-                        .pricing {
-                            width: 100%;
-                            .text-center {
-                                margin-top: 30px;
-                                margin-bottom: 30px;
-                                h3.title-pricing {
-                                    font-size: 30px;
-                                    text-transform: uppercase;
-                                    color: $colorText
-                                }
-                                P {
-                                    margin: 0;
-                                }
-                            }
-                            .row {
-                                .list-group {
-                                    .header {
-                                        background-color: $bgColPricing;
-                                        height: 100px;
-                                        h4 {
-                                            color: $textWhile;
-                                            text-transform: uppercase;
-                                        }
-                                    }
-                                    a {
-                                        color: #000000;
-                                    }
-                                    .list-group-item {
-                                        border: none;
-                                        border-left: 0.5px solid #e2e2e2;
-                                        border-right: 0.5px solid #e2e2e2;
-                                    }
-                                }
-                            }
-                            .row {
-                                .title {
-                                    .header {
-                                        h4 {
-                                            padding-top: 23px;
-                                        }
-                                    }
-                                    .list-group-item {
-                                        padding-right: 1px;
-                                    }
-                                }
-                            }
-                            .row {
-                                .popular {
-                                    padding-top: -20px;
-                                    padding-bottom: -20px;
-                                    .header {
-                                        background-color: $bgIconFunction;
-                                    }
-                                    a.popular {
-                                        padding-bottom: 30px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            section#news {
-                background-color: $bgBody;
-                margin-top: 30px;
-                margin-bottom: 40px;
-                .container {
-                    .text-center {
-                        margin-bottom: 40px;
-                        h3.title-news {
-                            text-transform: uppercase;
-                            font-size: 30px;
-                            color: rgb(51, 51, 51);
-                        }
-                        p {
-                            line-height: normal;
-                            margin: auto;
-                            text-align: center;
-                            width: 50%;
-                            font-size: 17px;
-                            color: rgb(51, 51, 51);
-                            @media screen and (max-width: 767px) {
-                                width: 100% !important;
-                            }
-                        }
-                    }
-                    .row {
-                        .col-md-4 {
-                            .card {
-                                border: none;
-                                @media screen and (max-width: 767px) {
-                                    border: none;
-                                    margin-top: 20px;
-                                }
-                                .card-body {
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    h5 {
-                                        font-size: 19.559px;
-                                        color: rgb(56, 64, 78);
-                                        font-weight: bold;
-                                        line-height: 1.2;
-                                    }
-                                    p {
-                                        color: $colorClock;
-                                        font-size: 14px
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            section#footer {
-                background-color: $bgFooter;
-                .container {
-                    .row1 {
-                        border-bottom: 1px solid $borderFooter;
-                        padding-top: 45px;
-                        padding-bottom: 40px;
-                        .introduct {
-                            ul.list-inline {
-                                li.logo-footer {
-                                    width: 150px;
-                                }
-                                li.social {
-                                    padding-left: 20px;
-                                    a {
-                                        color: $colorSocial
-                                    }
-                                }
+                section#partner {
+                    background-color: $bgBody;
+                    .container {
+                        .text-center {
+                            margin-top: 30px;
+                            margin-bottom: 30px;
+                            h3.title-partner {
+                                text-transform: uppercase;
+                                color: rgb(51, 51, 51);
+                                font-size: 30px;
+                                line-height: 2;
                             }
                             p {
-                                font-size: 15px;
-                                color: $textWhile
+                                font-size: 17px;
+                                color: rgb(51, 51, 51);
                             }
-                            .address {
+                        }
+                        .row {
+                            .col-md-3 {
+                                // height: 100px;
+                                .card {
+                                    border: none;
+                                    padding: 15px;
+                                    @media screen and (max-width: 767px) {
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                section#pricing {
+                    background-color: $bgPrice;
+                    .container {
+                        .row {
+                            .pricing {
+                                width: 100%;
+                                .text-center {
+                                    margin-top: 30px;
+                                    margin-bottom: 30px;
+                                    h3.title-pricing {
+                                        font-size: 30px;
+                                        text-transform: uppercase;
+                                        color: $colorTitle
+                                    }
+                                    P {
+                                        margin: 0;
+                                    }
+                                }
+                                .no-gutters {
+                                    .month {
+                                        .btn-group {
+                                            button {
+                                                font-size: 20px;
+                                                color: $colorText;
+                                                height: 50px;
+                                                width: 200px;
+                                                border: 2px solid $bgIconFunction;
+                                                @media screen and (max-width: 767px) {
+                                                    width: 110px;
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                            button.btn-light {
+                                                color: $colorTextBold;
+                                            }
+                                            button.btn-danger {
+                                                color: $textWhile;
+                                                border-top-left-radius: 25px;
+                                                border-bottom-left-radius: 25px;
+                                            }
+                                            button.last {
+                                                border-top-right-radius: 25px;
+                                                border-bottom-right-radius: 25px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .row {
+                                    .list-group {
+                                        .header {
+                                            background-color: $bgColPricing;
+                                            height: 100px;
+                                            h4 {
+                                                color: $textWhile;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                        a {
+                                            color: #000000;
+                                        }
+                                        .list-group-item {
+                                            border: none;
+                                            border-left: 0.5px solid #e2e2e2;
+                                            border-right: 0.5px solid #e2e2e2;
+                                        }
+                                    }
+                                }
+                                .row {
+                                    .title {
+                                        .header {
+                                            h4 {
+                                                padding-top: 23px;
+                                            }
+                                        }
+                                        .list-group-item {
+                                            padding-right: 1px;
+                                        }
+                                    }
+                                }
+                                .row {
+                                    .popular {
+                                        padding-top: -20px;
+                                        padding-bottom: -20px;
+                                        .header {
+                                            background-color: $bgIconFunction;
+                                        }
+                                        a.popular {
+                                            padding-bottom: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                section#news {
+                    background-color: $bgBody;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    .container {
+                        .text-center {
+                            margin-bottom: 40px;
+                            h3.title-news {
+                                text-transform: uppercase;
+                                font-size: 30px;
+                                color: rgb(51, 51, 51);
+                            }
+                            p {
+                                line-height: normal;
+                                margin: auto;
+                                text-align: center;
+                                width: 50%;
+                                font-size: 17px;
+                                color: rgb(51, 51, 51);
+                                @media screen and (max-width: 767px) {
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                        .row {
+                            .col-md-4 {
+                                .card {
+                                    border: none;
+                                    @media screen and (max-width: 767px) {
+                                        border: none;
+                                        margin-top: 20px;
+                                    }
+                                    .card-body {
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        h5 {
+                                            font-size: 19.559px;
+                                            color: rgb(56, 64, 78);
+                                            font-weight: bold;
+                                            line-height: 1.2;
+                                        }
+                                        p {
+                                            color: $colorClock;
+                                            font-size: 14px
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                section#footer {
+                    background-color: $bgFooter;
+                    .container {
+                        .row1 {
+                            border-bottom: 1px solid $borderFooter;
+                            padding-top: 45px;
+                            padding-bottom: 40px;
+                            .introduct {
+                                ul.list-inline {
+                                    li.logo-footer {
+                                        width: 150px;
+                                    }
+                                    li.social {
+                                        padding-left: 20px;
+                                        a {
+                                            color: $colorSocial
+                                        }
+                                    }
+                                }
                                 p {
                                     font-size: 15px;
-                                    margin: 0px;
                                     color: $textWhile
                                 }
-                            }
-                        }
-                        .col-md-3.download-app {
-                            p {
-                                color: $textWhile;
-                            }
-                            .download-ios {
-                                img {
-                                    border-radius: 5px;
+                                .address {
+                                    p {
+                                        font-size: 15px;
+                                        margin: 0px;
+                                        color: $textWhile
+                                    }
                                 }
                             }
-                            .download-android {
-                                img {
-                                    border-radius: 5px;
+                            .col-md-3.download-app {
+                                p {
+                                    color: $textWhile;
+                                }
+                                .download-ios {
+                                    img {
+                                        border-radius: 5px;
+                                    }
+                                }
+                                .download-android {
+                                    img {
+                                        border-radius: 5px;
+                                    }
                                 }
                             }
                         }
-                    }
-                    .row2 {
-                        .col {
-                            padding-bottom: 46px;
-                            padding-top: 22px;
-                            p {
-                                color: $textWhile;
-                                font-size: 15px;
+                        .row2 {
+                            .col {
+                                padding-bottom: 46px;
+                                padding-top: 22px;
+                                p {
+                                    color: $textWhile;
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
@@ -494,4 +544,3 @@ html {
             }
         }
     }
-}

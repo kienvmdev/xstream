@@ -54,7 +54,7 @@ html body nav#menu .container #navbarResponsive ul li.action-user a.nav-link {
 }
 
 html body section#main section#banner {
-  height: 600px;
+  height: auto;
   margin-top: 100px;
   margin-bottom: 30px;
 }
@@ -62,6 +62,14 @@ html body section#main section#banner {
 html body section#main section#banner .container {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  html body section#main section#banner .container {
+    background-image: url("../images/banner.png");
+    background-size: cover;
+  }
 }
 
 html body section#main section#banner .container .text-center {
@@ -131,6 +139,13 @@ html body section#main section#action .container .row .col-md-3 .card {
 
 html body section#main section#action .container .row .col-md-3 .card h4 {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  html body section#main section#action .container .row .col-md-3 .card h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 html body section#main section#action .container .row .col-md-3 .card img {
@@ -217,6 +232,7 @@ html body section#main section#time .container .row .col-md-6.col1 h3 {
 
 html body section#main section#time .container .row .col-md-6.col1 ul.list2 {
   list-style-image: url("../images/list1.png");
+  list-style-position: outside;
 }
 
 html body section#main section#time .container .row .col-md-6.col1 ul.list2 li {
@@ -246,21 +262,32 @@ html body section#main section#function .container .row .col-md-4 .card {
   border: none;
 }
 
-html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 {
+html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 .img-center {
   width: 60px !important;
   height: 60px !important;
   border-radius: 50%;
   background-color: #e73957;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 {
+  html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 .img-center {
+    margin: auto;
     width: 60px !important;
     height: 60px !important;
     border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     background-color: #e73957;
-    padding: 5px;
+    padding: 10px;
   }
 }
 
@@ -316,11 +343,41 @@ html body section#main section#pricing .container .row .pricing .text-center {
 html body section#main section#pricing .container .row .pricing .text-center h3.title-pricing {
   font-size: 30px;
   text-transform: uppercase;
-  color: #696969;
+  color: #333333;
 }
 
 html body section#main section#pricing .container .row .pricing .text-center P {
   margin: 0;
+}
+
+html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button {
+  font-size: 20px;
+  color: #696969;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #e73957;
+}
+
+@media screen and (max-width: 767px) {
+  html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button {
+    width: 110px;
+    font-size: 18px;
+  }
+}
+
+html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.btn-light {
+  color: #ef4257;
+}
+
+html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.btn-danger {
+  color: #ffffff;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.last {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 html body section#main section#pricing .container .row .pricing .row .list-group .header {

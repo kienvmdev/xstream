@@ -78,6 +78,7 @@ html body section#main section#banner .container .text-center {
 
 html body section#main section#banner .container .text-center h1 {
   color: #ef4257;
+  font-weight: 300;
 }
 
 html body section#main section#banner .container .text-center h1 span {
@@ -91,14 +92,18 @@ html body section#main section#banner .container .text-center p {
 }
 
 html body section#main section#banner .container .text-center button {
-  background-color: #e73957;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5757), to(#e23257));
+  background: linear-gradient(to right, #ff5757, #e23257);
   color: #ffffff;
+  font-size: 22px;
   font-weight: 600;
+  border-radius: 30px;
+  padding: 15px 30px;
 }
 
 html body section#main section#banner .container .row {
   height: 100px;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 html body section#main section#banner .container .row .list-inline.download-app li a img {
@@ -139,6 +144,7 @@ html body section#main section#action .container .row .col-md-3 .card {
 
 html body section#main section#action .container .row .col-md-3 .card h4 {
   margin-bottom: 40px;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 767px) {
@@ -167,46 +173,46 @@ html body section#main section#action .container .row .col-md-3 .card .card-body
 
 html body section#main section#solieu {
   margin-top: 50px;
-}
-
-html body section#main section#solieu .container .row {
   background-image: url("../images/bg1.png");
   background-repeat: no-repeat;
-  background-position: -210px center;
+  background-position: 200px center;
 }
 
 @media screen and (max-width: 767px) {
-  html body section#main section#solieu .container .row {
+  html body section#main section#solieu {
     background-image: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  html body section#main section#solieu .container .row .col-md-6.col1 {
+  html body section#main section#solieu .container .row .col-md-7.col1 {
     background-image: url("../images/bg1.png");
     background-repeat: no-repeat;
     background-position: -150px center;
   }
 }
 
-html body section#main section#solieu .container .row .col-md-6.col1 img {
+html body section#main section#solieu .container .row .col-md-7.col1 img {
   width: 100%;
-  padding: 30px 30px 0 40px;
+  padding: 30px 60px 0 60px;
   margin: auto;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in both;
+          animation: fadeIn 1s ease-in both;
 }
 
-html body section#main section#solieu .container .row .col-md-6.col2 h3 {
+html body section#main section#solieu .container .row .col-md-5.col2 h3 {
   font-size: 30px;
   text-transform: uppercase;
   color: #333333;
   margin-top: 30px;
 }
 
-html body section#main section#solieu .container .row .col-md-6.col2 ul.list1 {
+html body section#main section#solieu .container .row .col-md-5.col2 ul.list1 {
   list-style-image: url("../images/list2.png");
 }
 
-html body section#main section#solieu .container .row .col-md-6.col2 ul.list1 li {
+html body section#main section#solieu .container .row .col-md-5.col2 ul.list1 li {
   margin-top: 25px;
   margin-bottom: 25px;
   padding-top: -5px;
@@ -214,7 +220,7 @@ html body section#main section#solieu .container .row .col-md-6.col2 ul.list1 li
   color: #333333;
 }
 
-html body section#main section#solieu .container .row .col-md-6.col2 ul.list1 li span {
+html body section#main section#solieu .container .row .col-md-5.col2 ul.list1 li span {
   font-size: 35px;
   color: #333333;
 }
@@ -232,7 +238,6 @@ html body section#main section#time .container .row .col-md-6.col1 h3 {
 
 html body section#main section#time .container .row .col-md-6.col1 ul.list2 {
   list-style-image: url("../images/list1.png");
-  list-style-position: outside;
 }
 
 html body section#main section#time .container .row .col-md-6.col1 ul.list2 li {
@@ -260,13 +265,15 @@ html body section#main section#function .container .text-center h3 {
 
 html body section#main section#function .container .row .col-md-4 .card {
   border: none;
+  margin-bottom: 30px;
 }
 
 html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 .img-center {
   width: 60px !important;
   height: 60px !important;
   border-radius: 50%;
-  background-color: #e73957;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5757), to(#e23257));
+  background: linear-gradient(to right, #ff5757, #e23257);
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -278,6 +285,11 @@ html body section#main section#function .container .row .col-md-4 .card .row .co
   -webkit-border-radius: 50%;
 }
 
+html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 .img-center:hover {
+  width: 70px !important;
+  height: 70px !important;
+}
+
 @media screen and (max-width: 767px) {
   html body section#main section#function .container .row .col-md-4 .card .row .col-md-2 .img-center {
     margin: auto;
@@ -286,7 +298,8 @@ html body section#main section#function .container .row .col-md-4 .card .row .co
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    background-color: #e73957;
+    background: -webkit-gradient(linear, left top, right top, from(#ff5757), to(#e23257));
+    background: linear-gradient(to right, #ff5757, #e23257);
     padding: 10px;
   }
 }
@@ -380,6 +393,11 @@ html body section#main section#pricing .container .row .pricing .no-gutters .mon
   border-bottom-right-radius: 25px;
 }
 
+html body section#main section#pricing .container .row .pricing .row .list-group {
+  -webkit-box-shadow: 10px 10px 10px #e2e2e2;
+          box-shadow: 10px 10px 10px #e2e2e2;
+}
+
 html body section#main section#pricing .container .row .pricing .row .list-group .header {
   background-color: #757676;
   height: 100px;
@@ -419,6 +437,11 @@ html body section#main section#pricing .container .row .pricing .row .popular .h
 
 html body section#main section#pricing .container .row .pricing .row .popular a.popular {
   padding-bottom: 30px;
+}
+
+html body section#main section#pricing .container .row .pricing .row .popular .list-group {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 html body section#main section#news {
@@ -490,15 +513,27 @@ html body section#main section#footer .container .row1 {
   padding-bottom: 40px;
 }
 
-html body section#main section#footer .container .row1 .introduct ul.list-inline li.logo-footer {
+html body section#main section#footer .container .row1 .introduct .logo-footer {
+  position: relative;
+  height: 50px;
+  margin: auto;
+}
+
+html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.logo-footer {
   width: 150px;
 }
 
-html body section#main section#footer .container .row1 .introduct ul.list-inline li.social {
+html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.social {
   padding-left: 20px;
 }
 
-html body section#main section#footer .container .row1 .introduct ul.list-inline li.social a {
+html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.social a {
   color: #dadadc;
 }
 
@@ -533,5 +568,31 @@ html body section#main section#footer .container .row2 .col {
 html body section#main section#footer .container .row2 .col p {
   color: #ffffff;
   font-size: 15px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }
 /*# sourceMappingURL=app.css.map */

@@ -342,6 +342,7 @@ html body section#main section#partner .container .row .col-md-3 .card {
 
 html body section#main section#pricing {
   background-color: #f4f4f5;
+  padding-bottom: 30px;
 }
 
 html body section#main section#pricing .container .row .pricing {
@@ -363,7 +364,11 @@ html body section#main section#pricing .container .row .pricing .text-center P {
   margin: 0;
 }
 
-html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button {
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group {
+  margin: auto;
+}
+
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a {
   font-size: 20px;
   color: #696969;
   height: 50px;
@@ -372,74 +377,86 @@ html body section#main section#pricing .container .row .pricing .no-gutters .mon
 }
 
 @media screen and (max-width: 767px) {
-  html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button {
+  html body section#main section#pricing .container .row .pricing .button-tab .btn-group a {
     width: 110px;
     font-size: 18px;
   }
 }
 
-html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.btn-light {
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.btn-light {
   color: #ef4257;
 }
 
-html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.btn-danger {
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.btn-danger {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5757), to(#e23257));
+  background: linear-gradient(to bottom, #ff5757, #e23257);
   color: #ffffff;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
-html body section#main section#pricing .container .row .pricing .no-gutters .month .btn-group button.last {
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.last {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .list-group {
-  -webkit-box-shadow: 10px 10px 10px #e2e2e2;
-          box-shadow: 10px 10px 10px #e2e2e2;
+html body section#main section#pricing .container .row .pricing .row .tab-content {
+  width: 100%;
 }
 
-html body section#main section#pricing .container .row .pricing .row .list-group .header {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .col-md-3 {
+  padding: 0;
+}
+
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group {
+  -webkit-box-shadow: 0px 15px 10px -15px #a2a3a9;
+          box-shadow: 0px 15px 10px -15px #a2a3a9;
+}
+
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group .header {
   background-color: #757676;
   height: 100px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .list-group .header h4 {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group .header h4 {
   color: #ffffff;
   text-transform: uppercase;
 }
 
-html body section#main section#pricing .container .row .pricing .row .list-group a {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group a {
   color: #000000;
 }
 
-html body section#main section#pricing .container .row .pricing .row .list-group .list-group-item {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group .list-group-item {
   border: none;
   border-left: 0.5px solid #e2e2e2;
   border-right: 0.5px solid #e2e2e2;
 }
 
-html body section#main section#pricing .container .row .pricing .row .title .header h4 {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .title .header h4 {
   padding-top: 23px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .title .list-group-item {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .title .list-group-item {
   padding-right: 1px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .popular {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .popular {
   padding-top: -20px;
   padding-bottom: -20px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .popular .header {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .popular .header {
+  background: -webkit-gradient(linear, left top, right top, from(#ff5757), to(#e23257));
+  background: linear-gradient(to right, #ff5757, #e23257);
   background-color: #e73957;
 }
 
-html body section#main section#pricing .container .row .pricing .row .popular a.popular {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .popular a.popular {
   padding-bottom: 30px;
 }
 
-html body section#main section#pricing .container .row .pricing .row .popular .list-group {
+html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .popular .list-group {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -527,6 +544,10 @@ html body section#main section#footer .container .row1 .introduct .logo-footer u
 
 html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.logo-footer {
   width: 150px;
+}
+
+html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.logo-footer a img {
+  padding-bottom: 30px;
 }
 
 html body section#main section#footer .container .row1 .introduct .logo-footer ul.list-inline li.social {

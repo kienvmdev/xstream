@@ -402,126 +402,134 @@
                             <p>Hãy nhanh tay đăng ký ngay với chúng tôi, để có được những ưu đãi mới hấp dẫn nhất</p>
                             <p>Và đạt được hiệu quả cao nhất từ trước tới giờ cho bạn</p>
                         </div>
-
-                        <div class="row no-gutters my-3">
-                            <div class="col-md-12 text-center month">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-danger">1 tháng</button>
-                                    <button type="button" class="btn btn-light">3 tháng</button>
-                                    <button type="button" class="btn btn-light">6 tháng</button>
-                                    <button type="button" class="btn btn-light last">12 tháng</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3 title">
-                                <div class="list-group my-3">
-                                    <div class="list-group-item header">
-                                        <h4 class="text-center my-1">Gói cước dịch vụ</h4>
-                                    </div>
-                                    <a href="#" class="list-group-item">
-                                        Số lần Livestream / ngày
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Số Livestream chạy cùng lúc
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Thời lượng tối đa Livestream
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Độ phân giải của video Livestream
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Chèn video vào Livestream
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Chèn hình ảnh vào Livestream
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="list-group text-center my-3">
-                                    <div href="#" class="list-group-item header">
-                                        <h4 class="text-center my-1">gói free <br>0K / THÁNG</h4>
-                                    </div>
-                                    <a href="#" class="list-group-item">
-                                        05 lần
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        2 luồng
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        240 phút
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        720p
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 popular">
-                                <div class="list-group text-center my-3">
-                                    <div href="#" class="list-group-item header">
-                                        <h4 class="text-center my-1">gói BASIC <br>600K / THÁNG</h4>
-                                    </div>
-                                    <a href="#" class="list-group-item">
-                                        15 lần
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        3 luồng
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        240 phút
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        720p
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-                                    <a href="#" class="list-group-item popular">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="list-group text-center my-3">
-                                    <div href="#" class="list-group-item header">
-                                        <h4 class="text-center my-1">gói plus <br>3.000K / THÁNG</h4>
-                                    </div>
-                                    <a href="#" class="list-group-item">
-                                        50 lần
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        10 luồng
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        Không giới hạn
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        1080p
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <img src="images/check.png" alt="">
-                                    </a>
-
-                                </div>
+                        <div class="row text-center button-tab">
+                            <div id="tab" class="btn-group" data-toggle="buttons-radio">
+                                <a href="#prices" class="btn btn-danger active" data-toggle="tab">1 tháng</a>
+                                <a href="#features" class="btn btn-light" data-toggle="tab">3 tháng</a>
+                                <a href="#requests" class="btn btn-light" data-toggle="tab">6 tháng</a>
+                                <a href="#contact" class="btn btn-light last" data-toggle="tab">12 tháng</a>
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="tab-content col-md-12">
+                                <div class="tab-pane active" id="prices">
+                                    <div class="row">
+                                        <div class="col-md-3 title">
+                                            <div class="list-group my-3">
+                                                <div class="list-group-item header">
+                                                    <h4 class="text-center my-1">Gói cước dịch vụ</h4>
+                                                </div>
+                                                <a href="#" class="list-group-item">
+                                                                                        Số lần Livestream / ngày
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Số Livestream chạy cùng lúc
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Thời lượng tối đa Livestream
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Độ phân giải của video Livestream
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Chèn video vào Livestream
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Chèn hình ảnh vào Livestream
+                                                                                    </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="list-group text-center my-3">
+                                                <div href="#" class="list-group-item header">
+                                                    <h4 class="text-center my-1">gói free <br>0K / THÁNG</h4>
+                                                </div>
+                                                <a href="#" class="list-group-item">
+                                                                                        05 lần
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        2 luồng
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        240 phút
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        720p
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+                                                <a href="#" class="list-group-item">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 popular">
+                                            <div class="list-group text-center my-3">
+                                                <div href="#" class="list-group-item header">
+                                                    <h4 class="text-center my-1">gói BASIC <br>600K / THÁNG</h4>
+                                                </div>
+                                                <a href="#" class="list-group-item">
+                                                                                        15 lần
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        3 luồng
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        240 phút
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        720p
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+                                                <a href="#" class="list-group-item popular">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="list-group text-center my-3">
+                                                <div href="#" class="list-group-item header">
+                                                    <h4 class="text-center my-1">gói plus <br>3.000K / THÁNG</h4>
+                                                </div>
+                                                <a href="#" class="list-group-item">
+                                                                                        50 lần
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        10 luồng
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        Không giới hạn
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                                                        1080p
+                                                                                    </a>
+                                                <a href="#" class="list-group-item">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+                                                <a href="#" class="list-group-item">
+                                                    <img src="images/check.png" alt="">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="features">Features Content</div>
+                                <div class="tab-pane" id="requests">Requests Content</div>
+                                <div class="tab-pane" id="contact">Contact Content</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+            </div>
         </section>
 
         <!-- tin tức -->
@@ -599,6 +607,7 @@
                                 </li>
 
                             </ul>
+
                         </div>
                         <p>Công ty Cổ phần X Stream. Số GCNDT: 011032001615 <br> cấp ngày 21/06 nơi cấp: UBND Thành phố Hà Nội</p>
                         <div class="address">

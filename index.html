@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Xstream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.svg" />
     <link rel="apple-touch-icon-precomposed" href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,27 +28,27 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#banner" data-scroll="banner">
 							Trang chủ
 						</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#action">Hoạt động</a>
+                        <a class="nav-link" href="#action" data-scroll="action">Hoạt động</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#solieu">Số liệu</a>
+                        <a class="nav-link" href="#solieu" data-scroll="solieu">Số liệu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#function">Tính năng</a>
+                        <a class="nav-link" href="#function" data-scroll="function">Tính năng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#partner">Khách hàng</a>
+                        <a class="nav-link" href="#partner" data-scroll="partner">Khách hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Video</a>
+                        <a class="nav-link" href="#video" data-scroll="video">Video</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Gói cước</a>
+                        <a class="nav-link" href="#pricing" data-scroll="pricing">Gói cước</a>
                     </li>
 
                     <li class="nav-item action-user">
@@ -61,7 +62,7 @@
 
     <section id="main">
         <!-- banner -->
-        <section id="banner">
+        <section id="banner" data-anchor="banner">
             <div class="container">
                 <div class="text-center">
                     <h1>Nền tảng <span>Livestream</span> - Tương tác chuyên nghiệp</h1>
@@ -89,7 +90,7 @@
         <!-- /banner -->
 
         <!-- mô hình hoạt động -->
-        <section id="action">
+        <section id="action" data-anchor="action">
             <div class="container">
                 <div class="text-center">
                     <h3>mô hình hoạt động của xstream</h3>
@@ -140,7 +141,7 @@
         <!-- /mô hình hoạt động -->
 
         <!-- số liệu -->
-        <section id="solieu">
+        <section id="solieu" data-anchor="solieu">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7 col1">
@@ -162,7 +163,7 @@
         <!-- /số liệu -->
 
         <!-- thời gian -->
-        <section id="time">
+        <section id="time" data-anchor="time">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col1">
@@ -183,7 +184,7 @@
         <!-- /thời gian -->
 
         <!-- tính năng -->
-        <section id="function">
+        <section id="function" data-anchor="function">
             <div class="container">
                 <div class="text-center">
                     <h3>nhiều tính năng hấp dẫn</h3>
@@ -340,7 +341,7 @@
         <!-- /tính năng -->
 
         <!-- khách hàng -->
-        <section id="partner">
+        <section id="partner" data-anchor="partner">
             <div class="container">
                 <div class="text-center">
                     <h3 class="title-partner">45.000+ khách hàng đã sử dụng xstream</h3>
@@ -393,8 +394,9 @@
         </section>
         <!-- /gói cước -->
 
-        <section id="pricing">
+        <section id="pricing" data-anchor="pricing">
             <div class="container">
+
                 <div class="row">
                     <div class="pricing">
                         <div class="text-center">
@@ -403,8 +405,8 @@
                             <p>Và đạt được hiệu quả cao nhất từ trước tới giờ cho bạn</p>
                         </div>
                         <div class="row text-center button-tab">
-                            <div id="tab" class="btn-group" data-toggle="buttons-radio">
-                                <a href="#prices" class="btn btn-danger active" data-toggle="tab">1 tháng</a>
+                            <div id="tab" class="btn-group" data-toggle="buttons">
+                                <a href="#prices" class="btn first active" data-toggle="tab">1 tháng</a>
                                 <a href="#features" class="btn btn-light" data-toggle="tab">3 tháng</a>
                                 <a href="#requests" class="btn btn-light" data-toggle="tab">6 tháng</a>
                                 <a href="#contact" class="btn btn-light last" data-toggle="tab">12 tháng</a>
@@ -420,25 +422,12 @@
                                                 <div class="list-group-item header">
                                                     <h4 class="text-center my-1">Gói cước dịch vụ</h4>
                                                 </div>
-                                                <a href="#" class="list-group-item">
-                                                                                        Số lần Livestream / ngày
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Số Livestream chạy cùng lúc
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Thời lượng tối đa Livestream
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Độ phân giải của video Livestream
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Chèn video vào Livestream
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Chèn hình ảnh vào Livestream
-                                                                                    </a>
-
+                                                <a href="#" class="list-group-item">Số lần Livestream / ngày</a>
+                                                <a href="#" class="list-group-item">Số Livestream chạy cùng lúc</a>
+                                                <a href="#" class="list-group-item">Thời lượng tối đa Livestream</a>
+                                                <a href="#" class="list-group-item">Độ phân giải của video Livestream</a>
+                                                <a href="#" class="list-group-item">Chèn video vào Livestream</a>
+                                                <a href="#" class="list-group-item">Chèn hình ảnh vào Livestream</a>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -446,18 +435,10 @@
                                                 <div href="#" class="list-group-item header">
                                                     <h4 class="text-center my-1">gói free <br>0K / THÁNG</h4>
                                                 </div>
-                                                <a href="#" class="list-group-item">
-                                                                                        05 lần
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        2 luồng
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        240 phút
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        720p
-                                                                                    </a>
+                                                <a href="#" class="list-group-item">05 lần</a>
+                                                <a href="#" class="list-group-item">2 luồng</a>
+                                                <a href="#" class="list-group-item">240 phút</a>
+                                                <a href="#" class="list-group-item">720p</a>
                                                 <a href="#" class="list-group-item">
                                                     <img src="images/check.png" alt="">
                                                 </a>
@@ -472,18 +453,10 @@
                                                 <div href="#" class="list-group-item header">
                                                     <h4 class="text-center my-1">gói BASIC <br>600K / THÁNG</h4>
                                                 </div>
-                                                <a href="#" class="list-group-item">
-                                                                                        15 lần
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        3 luồng
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        240 phút
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        720p
-                                                                                    </a>
+                                                <a href="#" class="list-group-item">15 lần</a>
+                                                <a href="#" class="list-group-item">3 luồng</a>
+                                                <a href="#" class="list-group-item">240 phút</a>
+                                                <a href="#" class="list-group-item">720p</a>
                                                 <a href="#" class="list-group-item">
                                                     <img src="images/check.png" alt="">
                                                 </a>
@@ -499,18 +472,10 @@
                                                 <div href="#" class="list-group-item header">
                                                     <h4 class="text-center my-1">gói plus <br>3.000K / THÁNG</h4>
                                                 </div>
-                                                <a href="#" class="list-group-item">
-                                                                                        50 lần
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        10 luồng
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        Không giới hạn
-                                                                                    </a>
-                                                <a href="#" class="list-group-item">
-                                                                                        1080p
-                                                                                    </a>
+                                                <a href="#" class="list-group-item">50 lần</a>
+                                                <a href="#" class="list-group-item">10 luồng</a>
+                                                <a href="#" class="list-group-item">Không giới hạn</a>
+                                                <a href="#" class="list-group-item">1080p</a>
                                                 <a href="#" class="list-group-item">
                                                     <img src="images/check.png" alt="">
                                                 </a>

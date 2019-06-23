@@ -101,6 +101,12 @@ html body section#main section#banner .container .text-center button {
   padding: 15px 30px;
 }
 
+@media screen and (max-width: 676px) {
+  html body section#main section#banner .container .text-center button {
+    font-size: 18px;
+  }
+}
+
 html body section#main section#banner .container .row {
   height: 100px;
   padding-top: 70px;
@@ -108,6 +114,11 @@ html body section#main section#banner .container .row {
 
 html body section#main section#banner .container .row .list-inline.download-app li a img {
   width: 150px;
+}
+
+html body section#main section#banner .container .row .list-inline.download-app li a img:hover {
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (max-width: 767px) {
@@ -175,7 +186,7 @@ html body section#main section#solieu {
   margin-top: 50px;
   background-image: url("../images/bg1.png");
   background-repeat: no-repeat;
-  background-position: 200px center;
+  background-position: 210px center;
 }
 
 @media screen and (max-width: 767px) {
@@ -184,21 +195,43 @@ html body section#main section#solieu {
   }
 }
 
+html body section#main section#solieu .container .row .col-md-7.col1 {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   html body section#main section#solieu .container .row .col-md-7.col1 {
     background-image: url("../images/bg1.png");
     background-repeat: no-repeat;
-    background-position: -150px center;
+    background-size: cover;
+    background-position: center center;
+    position: static;
   }
 }
 
 html body section#main section#solieu .container .row .col-md-7.col1 img {
-  width: 100%;
+  width: 86.8%;
   padding: 30px 60px 0 60px;
   margin: auto;
   opacity: 0;
-  -webkit-animation: fadeIn 1s ease-in both;
-          animation: fadeIn 1s ease-in both;
+  position: absolute;
+  top: 100%;
+  -webkit-transition: all 2s ease 0.5s;
+  transition: all 2s ease 0.5s;
+}
+
+@media screen and (max-width: 676px) {
+  html body section#main section#solieu .container .row .col-md-7.col1 img {
+    width: 100%;
+    position: static;
+  }
+}
+
+html body section#main section#solieu .container .row .col-md-7.col1.active img {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.55s ease 0.55s;
+  transition: all 0.55s ease 0.55s;
 }
 
 html body section#main section#solieu .container .row .col-md-5.col2 h3 {
@@ -371,6 +404,7 @@ html body section#main section#pricing .container .row .pricing .button-tab .btn
 html body section#main section#pricing .container .row .pricing .button-tab .btn-group a {
   font-size: 20px;
   color: #696969;
+  text-decoration: none;
   height: 50px;
   width: 200px;
   border: 2px solid #e73957;
@@ -378,8 +412,9 @@ html body section#main section#pricing .container .row .pricing .button-tab .btn
 
 @media screen and (max-width: 767px) {
   html body section#main section#pricing .container .row .pricing .button-tab .btn-group a {
-    width: 110px;
+    width: 100px;
     font-size: 18px;
+    padding-top: 10px;
   }
 }
 
@@ -387,10 +422,14 @@ html body section#main section#pricing .container .row .pricing .button-tab .btn
   color: #ef4257;
 }
 
-html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.btn-danger {
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff5757), to(#e23257));
   background: linear-gradient(to bottom, #ff5757, #e23257);
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.first {
+  color: #ef4257;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -398,6 +437,12 @@ html body section#main section#pricing .container .row .pricing .button-tab .btn
 html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.last {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+html body section#main section#pricing .container .row .pricing .button-tab .btn-group a.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5757), to(#e23257));
+  background: linear-gradient(to bottom, #ff5757, #e23257);
+  color: #ffffff;
 }
 
 html body section#main section#pricing .container .row .pricing .row .tab-content {
@@ -424,6 +469,7 @@ html body section#main section#pricing .container .row .pricing .row .tab-conten
 }
 
 html body section#main section#pricing .container .row .pricing .row .tab-content .tab-pane .row .list-group a {
+  text-decoration: none;
   color: #000000;
 }
 
@@ -589,31 +635,5 @@ html body section#main section#footer .container .row2 .col {
 html body section#main section#footer .container .row2 .col p {
   color: #ffffff;
   font-size: 15px;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
 }
 /*# sourceMappingURL=app.css.map */
